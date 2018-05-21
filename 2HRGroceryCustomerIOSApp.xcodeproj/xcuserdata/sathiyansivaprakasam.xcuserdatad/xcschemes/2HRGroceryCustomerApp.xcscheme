@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "848544F820971E550072CA21"
-               BuildableName = "2HrGroceryCustomerIOSApp.app"
-               BlueprintName = "2HrGroceryCustomerIOSApp"
-               ReferencedContainer = "container:2HrGroceryCustomerIOSApp.xcodeproj">
+               BuildableName = "2HRGroceryCustomerIOSApp.app"
+               BlueprintName = "2HRGroceryCustomerIOSApp"
+               ReferencedContainer = "container:2HRGroceryCustomerIOSApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,9 +34,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8485450C20971E550072CA21"
-               BuildableName = "2HrGroceryCustomerIOSAppTests.xctest"
-               BlueprintName = "2HrGroceryCustomerIOSAppTests"
-               ReferencedContainer = "container:2HrGroceryCustomerIOSApp.xcodeproj">
+               BuildableName = "2HRGroceryCustomerIOSAppTests.xctest"
+               BlueprintName = "2HRGroceryCustomerIOSAppTests"
+               ReferencedContainer = "container:2HRGroceryCustomerIOSApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -44,9 +44,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8485451720971E560072CA21"
-               BuildableName = "2HrGroceryCustomerIOSAppUITests.xctest"
-               BlueprintName = "2HrGroceryCustomerIOSAppUITests"
-               ReferencedContainer = "container:2HrGroceryCustomerIOSApp.xcodeproj">
+               BuildableName = "2HRGroceryCustomerIOSAppUITests.xctest"
+               BlueprintName = "2HRGroceryCustomerIOSAppUITests"
+               ReferencedContainer = "container:2HRGroceryCustomerIOSApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -54,9 +54,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "848544F820971E550072CA21"
-            BuildableName = "2HrGroceryCustomerIOSApp.app"
-            BlueprintName = "2HrGroceryCustomerIOSApp"
-            ReferencedContainer = "container:2HrGroceryCustomerIOSApp.xcodeproj">
+            BuildableName = "2HRGroceryCustomerIOSApp.app"
+            BlueprintName = "2HRGroceryCustomerIOSApp"
+            ReferencedContainer = "container:2HRGroceryCustomerIOSApp.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -78,9 +78,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "848544F820971E550072CA21"
-            BuildableName = "2HrGroceryCustomerIOSApp.app"
-            BlueprintName = "2HrGroceryCustomerIOSApp"
-            ReferencedContainer = "container:2HrGroceryCustomerIOSApp.xcodeproj">
+            BuildableName = "2HRGroceryCustomerIOSApp.app"
+            BlueprintName = "2HRGroceryCustomerIOSApp"
+            ReferencedContainer = "container:2HRGroceryCustomerIOSApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -97,9 +97,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "848544F820971E550072CA21"
-            BuildableName = "2HrGroceryCustomerIOSApp.app"
-            BlueprintName = "2HrGroceryCustomerIOSApp"
-            ReferencedContainer = "container:2HrGroceryCustomerIOSApp.xcodeproj">
+            BuildableName = "2HRGroceryCustomerIOSApp.app"
+            BlueprintName = "2HRGroceryCustomerIOSApp"
+            ReferencedContainer = "container:2HRGroceryCustomerIOSApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
