@@ -496,8 +496,8 @@ class UserHomeViewController: UIViewController,UICollectionViewDataSource,UIColl
             cell.bgview.layer.shadowOpacity = 1.0
             cell.bgview.layer.masksToBounds = false;
             
-            varientdropDown.tag = indexPath.item
-            cell.varientButton.addTarget(self, action: #selector(Recentvareintaction(sender:)), for: .touchUpInside)
+            //varientdropDown.tag = indexPath.item
+            //cell.varientButton.addTarget(self, action: #selector(Recentvareintaction(sender:)), for: .touchUpInside)
             
             return cell
         }
@@ -524,7 +524,7 @@ class UserHomeViewController: UIViewController,UICollectionViewDataSource,UIColl
             cell.bgview.layer.shadowOpacity = 1.0
             cell.bgview.layer.masksToBounds = false;
             
-            cell.varientButton.addTarget(self, action: #selector(Availablevareintaction(sender:)), for: .touchUpInside)
+            //cell.varientButton.addTarget(self, action: #selector(Availablevareintaction(sender:)), for: .touchUpInside)
             
             return cell
         }
@@ -551,7 +551,7 @@ class UserHomeViewController: UIViewController,UICollectionViewDataSource,UIColl
             cell.bgview.layer.shadowOpacity = 1.0
             cell.bgview.layer.masksToBounds = false;
             
-            cell.varientButton.addTarget(self, action: #selector(Popularvareintaction(sender:)), for: .touchUpInside)
+            //cell.varientButton.addTarget(self, action: #selector(Popularvareintaction(sender:)), for: .touchUpInside)
             
             return cell
         }
@@ -711,6 +711,7 @@ class UserHomeViewController: UIViewController,UICollectionViewDataSource,UIColl
             nextViewController.descriptionstr = product.ProductDesc
             nextViewController.imagestr = product.Productimage
             nextViewController.productid = product.ProductId
+            nextViewController.varientid = "0"
             nextViewController.DropDownArray = (self.RecentitemsDropDown.object(at: indexPath.item) as! NSArray)
             self.navigationController?.pushViewController(nextViewController, animated: true)
             
@@ -730,6 +731,7 @@ class UserHomeViewController: UIViewController,UICollectionViewDataSource,UIColl
             nextViewController.descriptionstr = product.ProductDesc
             nextViewController.imagestr = product.Productimage
             nextViewController.productid = product.ProductId
+            nextViewController.varientid = "0"
             nextViewController.DropDownArray = (self.AvailProductsDropDown.object(at: indexPath.item) as! NSArray)
             self.navigationController?.pushViewController(nextViewController, animated: true)
             
@@ -749,6 +751,7 @@ class UserHomeViewController: UIViewController,UICollectionViewDataSource,UIColl
             nextViewController.descriptionstr = product.ProductDesc
             nextViewController.imagestr = product.Productimage
             nextViewController.productid = product.ProductId
+            nextViewController.varientid = "0"
             nextViewController.DropDownArray = (self.PopularitemsDropDown.object(at: indexPath.item) as! NSArray)
             self.navigationController?.pushViewController(nextViewController, animated: true)
             

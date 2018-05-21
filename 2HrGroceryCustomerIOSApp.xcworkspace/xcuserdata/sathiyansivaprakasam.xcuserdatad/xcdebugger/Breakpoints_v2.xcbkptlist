@@ -2222,38 +2222,6 @@
             endingLineNumber = "165"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "_HRGroceryCustomerApp.CartViewController.tableView(__ObjC.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __ObjC.UITableViewCell"
-                  moduleName = "2HRGroceryCustomerApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sathiyansivaprakasam/Ranjith/UpdatedCode/2HRGroceryCustomerApp/Controllers/CartViewController.swift"
-                  timestampString = "548575537.202444"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "166"
-                  endingLineNumber = "166"
-                  offsetFromSymbolStart = "4006">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "_HRGroceryCustomerApp.CartViewController.tableView(__ObjC.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __ObjC.UITableViewCell"
-                  moduleName = "2HRGroceryCustomerApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sathiyansivaprakasam/Ranjith/UpdatedCode/2HRGroceryCustomerApp/Controllers/CartViewController.swift"
-                  timestampString = "548575537.20415"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "166"
-                  endingLineNumber = "166"
-                  offsetFromSymbolStart = "22540">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -2349,6 +2317,38 @@
             startingLineNumber = "162"
             endingLineNumber = "162"
             landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "2HrGroceryCustomerIOSApp/GroceryDetailView.swift"
+            timestampString = "548579830.293467"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
+            landmarkName = "SetuplistDropDown()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "2HrGroceryCustomerIOSApp/Controllers/OrderConformationViewController.swift"
+            timestampString = "548579830.2935179"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "placeOrder()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

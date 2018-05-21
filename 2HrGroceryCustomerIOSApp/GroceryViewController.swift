@@ -399,6 +399,7 @@ class GroceryViewController: UIViewController,UITableViewDelegate,UITableViewDat
                 nextViewController.imagestr = product.Productimage
                 nextViewController.productid = product.ProductId
                 nextViewController.DropDownArray = product.ProductVarient as! NSMutableArray
+                nextViewController.varientid = "0"
                 self.navigationController?.pushViewController(nextViewController, animated: true)
             }
             else

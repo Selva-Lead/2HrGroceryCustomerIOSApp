@@ -179,6 +179,7 @@ class GroceryDetailView: UIViewController {
     
     @IBAction func cartAction(_ sender: Any)
     {
+        print(self.varientid)
         if useruid != ""
         {
             var timer = Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(tosterView), userInfo: nil, repeats: false)
@@ -186,7 +187,7 @@ class GroceryDetailView: UIViewController {
             print(productid)
             addcart.strProductId = productid
             addcart.strTimeStamp = NSTimeIntervalSince1970
-            addcart.strVarients = [self.varientid: "1" as AnyObject]
+            addcart.strVarients = ["0": "1" as AnyObject]
             FireAuthModel().addCarts(productForSaleID: productid!, valueAddCart: addcart)
         }
         else

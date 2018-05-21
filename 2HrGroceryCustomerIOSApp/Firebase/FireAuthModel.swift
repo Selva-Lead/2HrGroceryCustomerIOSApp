@@ -193,9 +193,11 @@ class FireAuthModel: NSObject {
                 if let actualvalue = value {
                      if strCompleted != nil {
                     // self.ref.child(users).child(user1).child(nodeA).child(nodeToBeMoved).removeValue()
-                    FIRUtils.cartMove().removeValue()
-                    FIRUtils.pendingCartPath().child("product").setValue(actualvalue["product"] as! [String : AnyObject])
-                    FIRUtils.pendingCartPath().child("order").setValue(actualvalue["order"] as! [String : AnyObject])
+                       // if value != nil {
+                            FIRUtils.cartMove().removeValue()
+                            FIRUtils.pendingCartPath().child("product").setValue(actualvalue["product"] as! [String : AnyObject])
+                            FIRUtils.pendingCartPath().child("order").setValue(actualvalue["order"] as! [String : AnyObject])
+                       // }
                     //self.ref.child(users).child(user2).child(nodeB).child(nodeToBeMoved).child(date).setValue(actualvalue["date"] as Any)
                     
                 }
