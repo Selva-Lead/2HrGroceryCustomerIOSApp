@@ -188,11 +188,21 @@ class GroceryViewController: UIViewController,UITableViewDelegate,UITableViewDat
     
     @objc func cart(sender: UIButton)
     {
-        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-        
-        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "CartViewController") as! CartViewController
-        self.navigationController?.pushViewController(nextViewController, animated: true)
-
+        if useruid != ""
+        {
+            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+            
+            let nextViewController = storyBoard.instantiateViewController(withIdentifier: "CartViewController") as! CartViewController
+            self.navigationController?.pushViewController(nextViewController, animated: true)
+        }
+        else
+        {
+            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+            
+            let nextViewController = storyBoard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+            self.navigationController?.pushViewController(nextViewController, animated: true)
+        }
+    
     }
     
     @objc func wishlist(sender: UIButton)
@@ -221,22 +231,33 @@ class GroceryViewController: UIViewController,UITableViewDelegate,UITableViewDat
         
     }
     @objc func addToCart(sender: UIButton) {
-        var timer = Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(tosterView), userInfo: nil, repeats: false)
-
-        if strCheckout == nil {
-            var strValues = [String : AnyObject]()
-            strValues["status"] = "cart" as AnyObject
-            FireAuthModel().setOrderStatus(status: strValues)
+        
+        if useruid != ""
+        {
+            var timer = Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(tosterView), userInfo: nil, repeats: false)
+            
+            if strCheckout == nil {
+                var strValues = [String : AnyObject]()
+                strValues["status"] = "cart" as AnyObject
+                FireAuthModel().setOrderStatus(status: strValues)
+            }
+            
+            let productCart = Productarray[sender.tag]
+            let addcart = AddCart()
+            print(productCart.ProductId)
+            addcart.strProductId = productCart.ProductId
+            addcart.strTimeStamp = NSTimeIntervalSince1970
+            addcart.strVarients = ["0": "1" as AnyObject]
+            FireAuthModel().addCarts(productForSaleID: productCart.ProductId!, valueAddCart: addcart)
         }
-  
-        let productCart = Productarray[sender.tag]
-        let addcart = AddCart()
-        print(productCart.ProductId)
-        addcart.strProductId = productCart.ProductId
-        addcart.strTimeStamp = NSTimeIntervalSince1970
-        addcart.strVarients = ["0": "1" as AnyObject]
-        FireAuthModel().addCarts(productForSaleID: productCart.ProductId!, valueAddCart: addcart)
+        else
+        {
+            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+            let nextViewController = storyBoard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+            self.navigationController?.pushViewController(nextViewController, animated: true)
+        }
     }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         if issearch == true
@@ -399,7 +420,6 @@ class GroceryViewController: UIViewController,UITableViewDelegate,UITableViewDat
                 nextViewController.imagestr = product.Productimage
                 nextViewController.productid = product.ProductId
                 nextViewController.DropDownArray = product.ProductVarient as! NSMutableArray
-                nextViewController.varientid = "0"
                 self.navigationController?.pushViewController(nextViewController, animated: true)
             }
             else

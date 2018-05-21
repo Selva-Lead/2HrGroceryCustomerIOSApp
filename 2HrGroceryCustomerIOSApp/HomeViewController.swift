@@ -506,7 +506,6 @@ class HomeViewController: UIViewController,UICollectionViewDataSource,UICollecti
             nextViewController.descriptionstr = product.ProductDesc
             nextViewController.imagestr = product.Productimage
             nextViewController.productid = product.ProductId
-            nextViewController.varientid = "0"
             nextViewController.DropDownArray = (self.AvailProductsDropDown.object(at: indexPath.item) as! NSArray)
             self.navigationController?.pushViewController(nextViewController, animated: true)
             
@@ -526,7 +525,6 @@ class HomeViewController: UIViewController,UICollectionViewDataSource,UICollecti
             nextViewController.descriptionstr = product.ProductDesc
             nextViewController.imagestr = product.Productimage
             nextViewController.productid = product.ProductId
-            nextViewController.varientid = "0"
             nextViewController.DropDownArray = (self.PopularitemsDropDown.object(at: indexPath.item) as! NSArray)
             self.navigationController?.pushViewController(nextViewController, animated: true)
             

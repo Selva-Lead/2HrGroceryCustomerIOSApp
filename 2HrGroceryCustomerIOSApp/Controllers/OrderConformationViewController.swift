@@ -48,7 +48,6 @@ class OrderConformationViewController: UIViewController {
         strValues["token"] = (savedCardsKey[selectedCard]) as AnyObject
         strValues["total"] = totalCheckOutPrice as AnyObject
         strValues["time"] = NSTimeIntervalSince1970 as AnyObject
-         strValues["status"] = strCompleted as AnyObject
          FireAuthModel().setOrderStatus(status: strValues)
         FireAuthModel().cartMoveToBendingCart()
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
@@ -127,7 +126,7 @@ func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> U
         celldetail.lbladdrDetail.text = customAddressList[0].strFullAddress
         return celldetail
     }else if indexPath.section == 2 {
-        cellPaymentDate.txtPaymentDate.text = selectedDateandTime
+        //cellPaymentDate.
         //cellPaymentDate.vewDateAndTime.layer.borderWidth = 1.0
         //cellPaymentDate.vewDateAndTime.layer.borderColor = UIColor(red:0.95, green:0.95, blue:0.96, alpha:1.0).cgColor
         return cellPaymentDate
